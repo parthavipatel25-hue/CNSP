@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>College Notes Sharing Platform</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <?php
 session_start();
 
-/* Logout logic */
 if (isset($_GET['logout'])) {
     session_unset();
     session_destroy();
@@ -19,8 +18,6 @@ if (isset($_GET['logout'])) {
 }
 ?>
 
-
-<!-- Navbar -->
 <nav class="navbar">
     <div class="logo">CNSP</div>
     <ul class="nav-links">
@@ -32,14 +29,12 @@ if (isset($_GET['logout'])) {
     </ul>
 </nav>
 
-<!-- Hero -->
 <section class="hero">
     <h1>Secure College Notes Sharing Platform</h1>
     <p>Organize • Verify • Access academic notes with confidence</p>
     <a href="register.php" class="btn-primary">Get Started</a>
 </section>
 
-<!-- Stats -->
 <section class="stats">
     <div>
         <h2>500+</h2>
@@ -55,7 +50,6 @@ if (isset($_GET['logout'])) {
     </div>
 </section>
 
-<!-- How it works -->
 <section id="how" class="how">
     <h2>How It Works</h2>
     <div class="steps">
@@ -65,7 +59,6 @@ if (isset($_GET['logout'])) {
     </div>
 </section>
 
-<!-- Features -->
 <section id="features" class="features">
     <h2>Key Features</h2>
     <div class="feature-box">
@@ -84,14 +77,12 @@ if (isset($_GET['logout'])) {
     </div>
 </section>
 
-<!-- Call to Action -->
 <section class="cta">
     <h2>Start Sharing Knowledge Today</h2>
     <p>Join your classmates on a secure academic platform.</p>
     <a href="register.php" class="btn-primary">Create Account</a>
 </section>
 
-<!-- Footer -->
 <footer class="footer">
     <p>© 2025 Secure College Notes Sharing Platform</p>
 </footer>
