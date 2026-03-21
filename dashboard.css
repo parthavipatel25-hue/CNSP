@@ -1,0 +1,204 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+}
+
+/* Dashboard Container */
+.dashboard {
+    width: 90%;
+    margin: 30px auto;
+}
+
+/* Header */
+.dash-header {
+    background: #1e293b;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-bottom:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logout Button */
+.logout-btn {
+    background: #ef4444;
+    border: none;
+    padding: 10px 18px;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #dc2626;
+}
+
+/* Cards Section */
+.cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Card Design */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #111827;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+/* Recently Uploaded Section */
+.recent-section {
+    margin-top: 30px;
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.recent-section h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 10px;
+}
+
+/* List container */
+.recent-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Each recent item */
+.recent-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9fafb;
+    padding: 14px 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #111827;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.recent-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    background: #eef2f7;
+}
+
+/* Title and info */
+.recent-item strong {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.recent-item small {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* Optional: uploader name for admin */
+.recent-item .uploader {
+    font-style: italic;
+    color: #475569;
+    margin-left: 8px;
+}
+
+/* ===== Summary Cards (Top Right) ===== */
+
+.summary-cards{
+display:flex;
+gap:10px;
+justify-content:flex-end;
+margin-bottom:20px;
+flex-wrap:wrap;
+}
+
+
+/* ===== Small Cards ===== */
+
+.card-box{
+padding:10px 16px;
+border-radius:10px;
+min-width:120px;
+text-align:center;
+font-size:13px;
+font-weight:600;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+transition:0.2s;
+}
+
+/* Different light colors */
+
+.card-box:nth-child(1){
+background:#EEF2FF;
+color:#4F46E5;
+}
+
+.card-box:nth-child(2){
+background:#ECFDF5;
+color:#059669;
+}
+
+.card-box:nth-child(3){
+background:#FEF3C7;
+color:#D97706;
+}
+
+.card-box:nth-child(4){
+background:#FCE7F3;
+color:#BE185D;
+}
+
+/* Hover */
+
+/* .card-box:hover{
+transform:translateY(-2px);
+box-shadow:0 6px 15px rgba(0,0,0,0.12);
+} */
+
+
+/* Card Text */
+
+.card-box h3{
+font-size:12px;
+margin:0;
+font-weight:600;
+}
+
+.card-box p{
+font-size:18px;
+margin:3px 0 0 0;
+font-weight:700;
+}
