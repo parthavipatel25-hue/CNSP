@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #0f172a;
+    color: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-nav {
+    background-color: #38bdf8;
+    padding: 6px 14px;
+    border-radius: 5px;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(to right, #020617, #1e40af);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.btn-primary {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #38bdf8;
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #f1f5f9;
+}
+
+.stats h2 {
+    color: #1e3a8a;
+}
+
+/* How it works */
+.how {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.steps {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.step {
+    background-color: #e2e8f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Features */
+.features {
+    background-color: #f8fafc;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.feature-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* CTA */
+.cta {
+    background-color: #1e40af;
+    color: white;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: #020617;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
