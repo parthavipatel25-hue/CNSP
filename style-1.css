@@ -1,0 +1,123 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+/* Background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(145deg, #e6e9ef, #eef1f6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card */
+.form-box {
+    width: 400px;
+    padding: 38px 34px;
+    border-radius: 22px;
+    background: #eef1f6;
+    box-shadow:
+        10px 10px 25px rgba(0,0,0,0.15),
+        -10px -10px 25px rgba(255,255,255,0.9);
+    position: relative;
+}
+
+/* Glow Accent */
+.form-box::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, #6366f1, #22d3ee);
+    z-index: -1;
+}
+
+/* Title */
+.form-box h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 28px;
+    color: #0f172a;
+    font-weight: 600;
+}
+
+/* Inputs */
+.form-box input,
+.form-box select {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+    border-radius: 14px;
+    border: none;
+    background: #eef1f6;
+    box-shadow:
+        inset 5px 5px 10px rgba(0,0,0,0.12),
+        inset -5px -5px 10px rgba(255,255,255,0.85);
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Focus */
+.form-box input:focus,
+.form-box select:focus {
+    outline: none;
+    box-shadow:
+        inset 2px 2px 5px rgba(0,0,0,0.15),
+        inset -2px -2px 5px rgba(255,255,255,0.9),
+        0 0 0 2px rgba(99,102,241,0.4);
+}
+
+/* Button */
+.form-box button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 16px;
+    border: none;
+    background: linear-gradient(135deg, #6366f1, #22d3ee);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.35s;
+    box-shadow: 0 8px 18px rgba(99,102,241,0.4);
+}
+
+/* Hover */
+.form-box button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 25px rgba(99,102,241,0.6);
+}
+
+/* Footer Text */
+.form-box p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #475569;
+}
+
+/* Links */
+.form-box a {
+    color: #6366f1;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.form-box a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 450px) {
+    .form-box {
+        width: 90%;
+    }
+}
