@@ -1,0 +1,131 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6ff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #fff;
+  width: 700px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-size: 36px;
+  color: #6b6df7;
+  margin-bottom: 25px;
+}
+
+.upload-box {
+  border: 2px dashed #b6b8ff;
+  border-radius: 18px;
+  padding: 30px;
+  background: #f7f8ff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.file-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.custom-file-btn {
+  background: #6b6df7;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(107,109,247,0.4);
+}
+
+.file-name {
+  font-weight: 600;
+  color: #6b6df7;
+}
+
+.note-type-select {
+  width: 180px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #c6c7ff;
+  font-weight: 600;
+}
+
+.upload-btn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(90deg, #6b6df7, #f7a8d8);
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.upload-btn:hover {
+  transform: translateY(-3px);
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #6b6df7;
+  font-weight: 700;
+}
+
+.message {
+  margin-bottom: 20px;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.success {
+  background: #e6fff3;
+  color: #1fa971;
+}
+
+.error {
+  background: #ffe6e6;
+  color: #d33;
+}
+     
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #6366F1;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background: rgba(99, 102, 241, 0.08);
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: rgba(99, 102, 241, 0.15);
+    color: #4F46E5;
+    transform: translateX(-5px);
+    box-shadow: 0 5px 20px rgba(99, 102, 241, 0.15);
+}
