@@ -1,0 +1,13 @@
+.status {
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.9em;
+    display: inline-block;
+}
+
+/* Light colors */
+.status-approved { background:#ECFDF5; color: #059669; }
+.status-pending  { background:#FEF3C7; color: #D97706; }
+.status-rejected { background:#FCE7F3; color: #BE185D; }
