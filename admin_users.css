@@ -1,0 +1,121 @@
+/* ===== Body & Container ===== */
+body {
+    background: linear-gradient(135deg, #F8F9FF 0%, #EEF2FF 100%);
+    font-family: 'Inter', sans-serif;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    padding: 30px 40px;
+    background: linear-gradient(135deg, #FFFFFF, #F8FAFF);
+    border-radius: 24px;
+    border: 1px solid #E0E7FF;
+    box-shadow: 0 30px 90px rgba(99, 102, 241, 0.12);
+}
+
+/* ===== Heading ===== */
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+
+    background: linear-gradient(135deg, #6366F1, #A78BFA);
+
+    background-clip: text;              
+    -webkit-background-clip: text;      
+
+    color: transparent;                 
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===== Table ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #E0E7FF;
+}
+
+th {
+    background: linear-gradient(135deg, #EEF2FF, #E0E7FF);
+    color: #6366F1;
+    font-weight: 700;
+}
+
+td {
+    background: #FFFFFF;
+}
+
+tr:hover td {
+    background: linear-gradient(135deg, #F8FAFF, #EEF2FF);
+}
+
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #6366F1;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background: rgba(99, 102, 241, 0.08);
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: rgba(99, 102, 241, 0.15);
+    color: #4F46E5;
+    transform: translateX(-5px);
+    box-shadow: 0 5px 20px rgba(99, 102, 241, 0.15);
+}
+
+a.edit {
+    background: linear-gradient(135deg, #60A5FA, #93C5FD); /* light blue gradient */
+    box-shadow: 0 4px 15px rgba(96, 165, 250, 0.3);
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #fff;
+    margin: 0 2px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+a.edit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(96, 165, 250, 0.4);
+    background: linear-gradient(135deg, #3B82F6, #60A5FA);
+}
+
+/* DELETE BUTTON (RED) - reuse your existing delete style */
+a.delete {
+    background: linear-gradient(135deg, #F87171, #FCA5A5);
+    box-shadow: 0 4px 15px rgba(248, 113, 113, 0.3);
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #fff;
+    margin: 0 2px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+a.delete:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(248, 113, 113, 0.4);
+    background: linear-gradient(135deg, #EF4444, #F87171);
+}

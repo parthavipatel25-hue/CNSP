@@ -1,0 +1,240 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+--primary:#6366F1;
+--primary-dark:#4F46E5;
+--primary-light:#A78BFA;
+--accent:#F9A8D4;
+--success:#34D399;
+--error:#EF4444;
+--dark:#F8F9FF;
+--dark-secondary:#FFFFFF;
+--text-primary:#334155;
+--text-secondary:#6366F1;
+--border:#E0E7FF;
+}
+
+body{
+font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+background-color:var(--dark);
+background-image:
+radial-gradient(at 0% 0%, rgba(99,102,241,0.15) 0px, transparent 50%),
+radial-gradient(at 100% 100%, rgba(249,168,212,0.15) 0px, transparent 50%);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+padding:40px 20px;
+position:relative;
+overflow-x:hidden;
+}
+
+/* Animated background */
+
+body::before{
+content:'';
+position:fixed;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background-image:
+linear-gradient(rgba(99,102,241,0.05) 1px, transparent 1px),
+linear-gradient(90deg, rgba(99,102,241,0.05) 1px, transparent 1px);
+background-size:50px 50px;
+z-index:-1;
+animation:gridMove 20s linear infinite;
+}
+
+@keyframes gridMove{
+0%{transform:translate(0,0);}
+100%{transform:translate(50px,50px);}
+}
+
+/* Container */
+
+.profile-container{
+background:linear-gradient(135deg,var(--dark-secondary) 0%,#F8FAFF 100%);
+border-radius:24px;
+padding:50px 60px;
+max-width:700px;
+width:100%;
+box-shadow:
+0 0 0 1px rgba(99,102,241,0.1),
+0 20px 60px rgba(99,102,241,0.1),
+0 0 80px rgba(167,139,250,0.05);
+border:1px solid rgba(99,102,241,0.1);
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+/* Heading */
+
+h2{
+font-size:2.5rem;
+font-weight:800;
+color:var(--text-primary);
+margin-bottom:30px;
+text-align:center;
+background:linear-gradient(135deg,var(--primary),var(--primary-light));
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+background-clip:text;
+position:relative;
+}
+
+h2::after{
+content:'';
+position:absolute;
+bottom:-10px;
+left:50%;
+transform:translateX(-50%);
+width:80px;
+height:5px;
+background:linear-gradient(90deg,var(--primary),var(--accent));
+border-radius:3px;
+}
+
+/* Form */
+
+form{
+width:100%;
+max-width:500px;
+display:flex;
+flex-direction:column;
+align-items:stretch;
+}
+
+/* Labels */
+
+label{
+font-weight:600;
+margin-bottom:6px;
+color:var(--text-primary);
+}
+
+/* Inputs */
+
+input[type=text],
+input[type=email],
+input[type=password]{
+width:100%;
+padding:12px;
+border-radius:8px;
+border:1px solid var(--border);
+margin-bottom:15px;
+font-size:1rem;
+transition:0.3s;
+}
+
+input:focus{
+border-color:var(--primary);
+outline:none;
+box-shadow:0 0 0 3px rgba(99,102,241,0.15);
+}
+
+/* Submit button */
+
+input[type=submit]{
+padding:14px;
+background:var(--success);
+color:white;
+font-weight:700;
+border:none;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+margin-top:10px;
+}
+
+input[type=submit]:hover{
+background:#28a745;
+transform:translateY(-2px);
+box-shadow:0 5px 15px rgba(52,211,153,0.3);
+}
+
+/* Update Password Button */
+
+.edit-btn{
+padding:12px 20px;
+background:var(--primary);
+color:white;
+border:none;
+border-radius:10px;
+font-weight:600;
+cursor:pointer;
+margin-bottom:20px;
+transition:0.3s;
+}
+
+.edit-btn:hover{
+background:var(--primary-dark);
+}
+
+/* Password Section FIX */
+
+#password-section{
+width:100%;
+display:flex;
+flex-direction:column;
+gap:8px;
+margin-top:10px;
+}
+
+/* Cancel Button */
+
+.cancel-btn{
+margin-top:15px;
+display:inline-block;
+text-align:center;
+padding:12px;
+border-radius:10px;
+background:rgba(99,102,241,0.08);
+color:var(--primary);
+font-weight:600;
+text-decoration:none;
+transition:0.3s;
+}
+
+.cancel-btn:hover{
+background:rgba(99,102,241,0.15);
+}
+
+/* Error */
+
+.error{
+color:var(--error);
+font-weight:600;
+margin-bottom:15px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.profile-container{
+padding:40px 35px;
+}
+
+h2{
+font-size:2rem;
+}
+
+}
+
+@media(max-width:480px){
+
+.profile-container{
+padding:30px 20px;
+}
+
+h2{
+font-size:1.7rem;
+}
+
+}
