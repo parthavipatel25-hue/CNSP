@@ -1,0 +1,96 @@
+/* PAGE BACKGROUND */
+body{
+font-family: Arial, Helvetica, sans-serif;
+background:#f4f6f9;
+margin:0;
+padding:0;
+}
+
+/* MAIN CONTAINER */
+.dashboard{
+width:850px;
+margin:40px auto;
+background:#ffffff;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* MAIN TITLE */
+h2{
+text-align:center;
+color:#333;
+margin-bottom:25px;
+}
+
+/* SECTION HEADINGS */
+h3{
+color:#444;
+margin-top:20px;
+margin-bottom:10px;
+border-left:5px solid #4CAF50;
+padding-left:10px;
+}
+
+/* DIVIDER */
+hr{
+border:none;
+height:1px;
+background:#e0e0e0;
+margin:20px 0;
+}
+
+/* DOWNLOAD ITEMS */
+.dashboard div{
+background:#f9f9f9;
+padding:12px 15px;
+margin-bottom:10px;
+border-radius:6px;
+border-left:4px solid #4CAF50;
+transition:0.3s;
+}
+
+/* HOVER EFFECT */
+.dashboard div:hover{
+background:#f1f1f1;
+}
+
+/* FILE NAME */
+.dashboard b{
+font-size:15px;
+color:#222;
+}
+
+/* DATE / TIME */
+.dashboard small{
+color:#777;
+font-size:13px;
+}
+
+/* TOTAL DOWNLOADS CARD */
+.dashboard h3:first-of-type{
+background:#4CAF50;
+color:white;
+padding:10px;
+border-radius:6px;
+border:none;
+text-align:center;
+}
+
+/* BACK BUTTON */
+a{
+display:inline-block;
+margin-top:25px;
+padding:10px 18px;
+background:#4CAF50;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-size:14px;
+transition:0.3s;
+}
+
+/* BUTTON HOVER */
+a:hover{
+background:#45a049;
+}
